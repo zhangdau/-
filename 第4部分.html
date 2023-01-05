@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>数据分析</title>
+<script src="js/echarts.js"></script>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="" name="keywords">
+<meta content="" name="description">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="css/css2.css" rel="stylesheet">
+
+<link href="css/all.min.css" rel="stylesheet">
+<link href="css/bootstrap-icons.css" rel="stylesheet">
+
+<link href="css/animate.min.css" rel="stylesheet">
+<link href="css/owl.carousel.min.css" rel="stylesheet">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+<div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+</div>
+
+
+<div class="container-fluid bg-dark px-0">
+<div class="row g-0 d-none d-lg-flex">
+<div class="col-lg-6 ps-5 text-start">
+<div class="h-100 d-inline-flex align-items-center text-white">
+<span>说一说</span>
+</div>
+</div>
+<div class="col-lg-6 text-end">
+<div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
+<span class="fs-5 fw-bold me-2"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
+<span class="fs-5 fw-bold">000-000-000</span>
+</div>
+</div>
+</div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
+<a href="index.html" class="navbar-brand ps-5 me-0">
+<h1 class="text-white m-0">土地</h1>
+</a>
+<button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<div class="navbar-nav ms-auto p-4 p-lg-0">
+<a href="index.html" class="nav-item nav-link">主页</a>
+<a href="第2部分.html" class="nav-item nav-link">我国耕地</a>
+<a href="第3部分.html" class="nav-item nav-link">我国耕地分布</a>
+<a href="" class="nav-item nav-link active">数据分析</a>
+</div>
+</div>
+</div>
+<a href="" class="btn btn-primary px-3 d-none d-lg-block">刷新页面</a>
+</div>
+</nav>
+
+
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="container py-5">
+<h1 class="display-3 text-white animated slideInRight">数据分析</h1>
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb animated slideInRight mb-0">
+<li class="breadcrumb-item"><a href="#">中部</a></li>
+<li class="breadcrumb-item"><a href="#">东部</a></li>
+<li class="breadcrumb-item active" aria-current="page">西部</li>
+</ol>
+</nav>
+</div>
+</div>
+
+
+<div class="container-xxl py-5">
+<div class="container">
+<div class="row g-5 justify-content-center mb-5">
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+<div class="bg-light text-center h-100 p-5">
+<div class="btn-square bg-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+<i class="fa  fa-2x text-primary">中部</i>
+</div>
+<h4 class="mb-3">中部地区</h4>
+<p class="mb-2">中部地区在全国耕地分布最多，占比最大</p>
+<p class="mb-4">中部地区有灌溉设施耕地占比少于无灌溉设施耕地</p>
+<a class="btn btn-primary px-4" href="#">了解更多<i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+<div class="bg-light text-center h-100 p-5">
+<div class="btn-square bg-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+<i class="fa  fa-2x text-primary">东部</i>
+</div>
+<h4 class="mb-3">东部地区</h4>
+<p class="mb-2">东部地区在全国耕地分布较少于中部地区</p>
+<p class="mb-4">东部地区有灌溉设施耕地占比多于无灌溉设施耕地</p>
+<a class="btn btn-primary px-4" href="#">了解更多<i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+<div class="bg-light text-center h-100 p-5">
+<div class="btn-square bg-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+<i class="fa  fa-2x text-primary">西部</i>
+</div>
+<h4 class="mb-3">西部地区</h4>
+<p class="mb-2">西部地区在全国耕地分布较少于中部地区</p>
+<p class="mb-4">西部地区有灌溉设施耕地占比少于无灌溉设施耕地</p>
+<a class="btn btn-primary px-4" href="#" target="blank">了解更多<i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+</div>
+<h1 class="fw-medium fa-2x text-uppercase text-primary mb-2">图表分析</h1>
+
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+<script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/jquery-3.4.1.min.js" type="10eed443dc2a0c7b4fd375c1-text/javascript"></script>
+<script src="js/bootstrap.bundle.min.js" type="10eed443dc2a0c7b4fd375c1-text/javascript"></script>
+<script src="js/wow.min.js" type="10eed443dc2a0c7b4fd375c1-text/javascript"></script>
+<script src="js/easing.min.js" type="10eed443dc2a0c7b4fd375c1-text/javascript"></script>
+<script src="js/waypoints.min.js" type="10eed443dc2a0c7b4fd375c1-text/javascript"></script>
+<script src="js/owl.carousel.min.js" type="10eed443dc2a0c7b4fd375c1-text/javascript"></script>
+<script src="js/counterup.min.js" type="10eed443dc2a0c7b4fd375c1-text/javascript"></script>
+
+<script src="js/main.js" type="10eed443dc2a0c7b4fd375c1-text/javascript"></script>
+<script src="js/rocket-loader.min.js" data-cf-settings="10eed443dc2a0c7b4fd375c1-|49" defer=""></script></body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="static/js/echarts.min.js"></script>
+    <script src="static/js/vintage.js"></script>
+  </head>
+  <body>
+    <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+    <div id="main" style="width: 600px;height:400px;position: relative;float: left;top: 50px;left: 0px;"></div>
+    <div id="main1" style="width: 600px;height:400px;top: 50px;left: 700px;"></div>
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main'),'vintage');
+      var myChart1 = echarts.init(document.getElementById('main1'),'vintage');
+      // 指定图表的配置项和数据
+      option = {
+        title: {
+    text: '东中西部耕地面积分布'
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    }
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'cross',
+      crossStyle: {
+        color: '#999'
+      }
+    }
+  },
+  toolbox: {
+    feature: {
+      dataView: { show: true, readOnly: false },
+      magicType: { show: true, type: ['line', 'bar'] },
+      restore: { show: true },
+      saveAsImage: { show: true }
+    }
+  },
+  legend: {
+    data: ['Precipitation', 'Temperature']
+  },
+  xAxis: [
+    {
+      type: 'category',
+      data: ['东部地区', '中部地区', '西部地区'],
+      axisPointer: {
+        type: 'shadow'
+      }
+    }
+  ],
+  yAxis: [
+    {
+      type: 'value',
+      name: '万公顷',
+      min: 0,
+      max: 6000,
+      interval: 1000,
+      
+    },
+    {
+      type: 'value',
+      name: '万亩',
+      min: 0,
+      max: 100000,
+      interval: 20000,
+      
+    }
+  ],
+  series: [
+    {
+      name: '万公顷',
+      type: 'bar',
+      tooltip: {
+        valueFormatter: function (value) {
+          return value + ' 万公顷';
+        }
+      },
+      data: [
+        3695.59, 5611.89, 33696.45
+      ]
+    },
+    {
+      name: '万亩',
+      type: 'line',
+      yAxisIndex: 1,
+      tooltip: {
+        valueFormatter: function (value) {
+          return value + ' 万亩';
+        }
+      },
+      data: [55433.83, 84278.33, 55446.68]
+    }
+  ]
+};
+option1 = {
+  title: {
+    text: '东中西部耕地灌溉面积'
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    }
+  },
+  legend: {},
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  xAxis: {
+    type: 'value',
+    boundaryGap: [0, 0.01],
+    name: '%' 
+  },
+  yAxis: {
+    type: 'category',
+    data: ['东部地区', '中部地区', '西部地区'],
+    name: '地区' 
+  },
+  series: [
+    {
+      name: '有灌溉',
+      type: 'bar',
+      data: [57.7,32.9,32.4]
+    },
+    {
+      name: '无灌溉',
+      type: 'bar',
+      data: [42.3,67.1,67.6]
+    }
+  ]
+};
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+      myChart1.setOption(option1);
+    </script>
+  </body>
+</html>
